@@ -1,12 +1,16 @@
 {
-  "name": "next-js",
+  "name": "template_next-js",
+  "author": "HANNA_BUSKO",
+  "description": "A template for creating a fullstack Next.js application",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier:check": "prettier --check \"src/**/*.{ts,tsx,d.ts,scss}\" || echo",
+    "prettier:write": "prettier --write \"src/**/*.{ts,tsx,d.ts,scss}\""
   },
   "dependencies": {
     "@types/node": "18.16.3",
